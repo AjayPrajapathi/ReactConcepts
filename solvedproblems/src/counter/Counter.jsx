@@ -36,11 +36,19 @@ export const Counter = () => {
       <h1 className="text-[2rem] text-blue-900 font-extrabold">Counter</h1>
       <h2 className="text-[5rem] text-pink-800">{state.count}</h2>
       <div className="flex space-x-6">
-        <button onClick={() => dispatch({ type: "TOGGLE" })} className="border-2 border-gray-800 bg-slate-500 rounded-lg px-4">
+        <button
+          onClick={() => dispatch({ type: "TOGGLE" })}
+          className="border-2 border-gray-800 bg-slate-500 rounded-lg px-4"
+        >
           {state.isRunning ? "STOP" : "START"}
         </button>
         {/* <button onClick={() => dispatch({ type: "STOP" })}>Stop</button> */}
-        <button onClick={() => dispatch({ type: "RESET" })}  className="border-2 border-gray-800 bg-slate-500 rounded-lg px-4">Reset</button>
+        <button
+          onClick={() => dispatch({ type: "RESET" })}
+          className="border-2 border-gray-800 bg-slate-500 rounded-lg px-4"
+        >
+          Reset
+        </button>
       </div>
     </div>
   );
