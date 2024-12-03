@@ -6,6 +6,8 @@ import { Counter } from "./counter/counter";
 import TodoList from "./todoList/TodoList";
 import SearchBar from "./Dynamic SearchBar/SearchBar";
 import KeyDown from "./keyDown/keyDown";
+import FetchData from "./fetching/Fetch";
+import Time from "./greeting/Time";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,11 +22,14 @@ function App() {
           <Route path="/" element={<Counter />}>
             Counter
           </Route>
-          <Route path="todo-list" element={<TodoList/>}>
+          <Route path="todo-list" element={<TodoList />}>
             TodoList
           </Route>
-          <Route path="dynamic-search" element={<SearchBar/>}/>
-          <Route path="key-down" element={<KeyDown/>}/>
+          <Route path="dynamic-search" element={<SearchBar />} />
+          <Route path="key-down" element={<KeyDown />} />
+          <Route path="fetch" element={<FetchData />} />
+          <Route path="time" element={<Time />} />
+          <Route path="pagination" element={Pagintaion} />
         </Routes>
       </div>
     </div>
